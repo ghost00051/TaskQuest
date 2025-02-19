@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.Microservice-name {
+    font-family: "Montserrat", serif;
+    color: rgb(255, 123, 0);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 3%;
+}
+
+.Enter {
+    font-family: "Montserrat", serif;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 8%;
+}
+
+.Flex-comp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.input-checked {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    border: 1px black solid;
+    padding: 3% 6% 3% 4%;
+}
+
+.input-email {
+    margin-bottom: 10%;
+}
+
+.left-block {
+    width: 18em;
+}
+
+.top-email, .top-password {
+    color: rgb(0, 0, 0);
+    font-family: "Noto Sans", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 3%;
+}
+
+#password-input, #email-input {
+    font-size: 15px;
+    border: none;
+}
+
+#password-input {
+    margin-top: 3%;
+}
+
+.input-password {
+    flex-direction: row;
+}
+
+.chekPassword {
+    align-self: end;
+}
+
+
+#entrance-button {
+    color: rgb(255, 255, 255);
+    font-family: "Noto Sans", serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    background: rgb(255, 123, 0);
+    padding: 4% 41% 4% 41%;
+    margin-top: 7%;
+}
+
+.registration {
+    display: flex;
+    justify-content: center;
+    border-top:1px rgb(205, 205, 205) solid ;
+    margin-top: 8%;
+}
+
+.registration p:nth-child(1), .registration p:nth-child(2){
+    margin-top: 3%;
+}
+
+.registration p:nth-child(1) {
+    color: rgb(0, 0, 0);
+    font-family: "Noto Sans", serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-right: 4%;
+}
+
+.registration p:nth-child(2){
+    color: rgb(255, 123, 0);
+    font-family: "Noto Sans", serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0px;
+    text-align: center;
+    text-decoration: underline;
+}
