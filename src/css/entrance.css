@@ -64,12 +64,12 @@ body {
     margin-bottom: 3%;
 }
 
-#password-input, #email-input {
+#password-input, #email-input,#password-input2 {
     font-size: 15px;
     border: none;
 }
 
-#password-input {
+#password-input, #password-input2 {
     margin-top: 3%;
 }
 
@@ -128,4 +128,8 @@ body {
     letter-spacing: 0px;
     text-align: center;
     text-decoration: underline;
+}
+
+.input-1{
+    margin-bottom: 10%;
 }

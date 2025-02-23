@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import first from '../../img/first.svg';
 import сloseEyes from '../../img/CloseEyes.svg'
 import openEyes from '../../img/OpenEyes.svg'
+import {Link} from 'react-router-dom';
+
 
 const Entr = () => {
   useEffect(() => {
@@ -40,7 +42,7 @@ const Entr = () => {
         <div className="Flex-comp">
           <div className="left-block">
             <p className="Enter">Войти</p>
-            <form role="entrance" className='entrance-form'>
+            <form className='entrance-form'>
               <div className="input-checked input-email">
                 <label htmlFor="email-input" className="top-email">
                   Email
@@ -91,7 +93,6 @@ const Entr = () => {
             <div className='registration'>
               <p>Еще нет аккаунта?</p>
               <Link to="/registration">Зарегестрироваться</Link>
-              <Route path="/registration" component={reg}/>
             </div>
           </div>
           <div>

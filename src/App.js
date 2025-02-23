@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import Entr from './component/entrance/entrance'
-import './App.css';
-import './css/entrance.css'
-import { BrowserRouter as Route, Link } from 'react-router-dom';
-import Registration from './component/registration/registration'; // Путь к вашему компоненту регистрации
 import React from 'react';
+import { Route, Routes } from 'react-router-dom'; // Убедитесь, что вы импортируете только Route и Routes
+import Entr from './component/entrance/entrance';
+import Registration from './component/registration/registration';
+import './App.css';
+import './css/entrance.css';
 
 const App = () => {
   return (
     <div>
-      <Entr />
-      <Router>
-        <Switch>
-          <Route path="/" exact component={Entr} />
-          <Route path="/registration" component={Registration} />
-        </Switch>
-      </Router>
+      <Routes>
+        <Route path="/" element={<Entr />} /> {/* Страница Entrance */}
+        <Route path="/registration" element={<Registration />} /> {/* Страница Registration */}
+      </Routes>
     </div>
-
   );
 };
-
 
 export default App;
