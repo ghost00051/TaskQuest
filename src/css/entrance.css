@@ -64,7 +64,7 @@ body {
     margin-bottom: 3%;
 }
 
-#password-input, #email-input,#password-input2 {
+#password-input, #email-input, #password-input2 {
     font-size: 15px;
     border: none;
 }
@@ -100,12 +100,27 @@ body {
 .registration {
     display: flex;
     justify-content: center;
-    border-top:1px rgb(205, 205, 205) solid ;
+    border-top: 1px rgb(205, 205, 205) solid;
     margin-top: 8%;
+    align-items: center;
 }
 
-.registration p:nth-child(1), .registration p:nth-child(2){
-    margin-top: 3%;
+.registration button {
+    color: rgb(255, 123, 0);
+    font-family: "Noto Sans", serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0px;
+    text-align: center;
+    text-decoration: underline;
+    background-color: rgba(1, 1, 1, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.registration p:nth-child(1), .registration p:nth-child(2) {
+    margin-top: 4%;
 }
 
 .registration p:nth-child(1) {
@@ -119,7 +134,7 @@ body {
     margin-right: 4%;
 }
 
-.registration p:nth-child(2){
+.registration a:nth-child(2) {
     color: rgb(255, 123, 0);
     font-family: "Noto Sans", serif;
     font-size: 12px;
@@ -130,6 +145,6 @@ body {
     text-decoration: underline;
 }
 
-.input-1{
+.input-1 {
     margin-bottom: 10%;
 }
