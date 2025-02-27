@@ -1,0 +1,35 @@
+@media (max-width: 900px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        display: block;
+        padding-left: 8%;
+        margin-top: 25%;
+    }
+
+    .Microservice-name {
+        font-size: 24px;
+        margin-bottom: 10%;
+    }
+
+    .Flex-comp{
+        display: block;
+    }
+
+    .Entr{
+        margin-bottom: 14%;
+    }
+
+    .input-second{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-password{
+        justify-content: space-between;
+    }
+}

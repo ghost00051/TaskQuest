@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'; // Убедитесь, что 
 import Entr from './component/entrance/entrance';
 import Registration from './component/registration/registration';
 import './App.css';
-import './css/entrance.css';
+import Mai from './component/main/main'
 
 const App = () => {
   return (

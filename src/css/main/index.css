@@ -1,0 +1,14 @@
+.god_of_main{
+    display: flex;
+    flex-direction: row;
+}
+
+.current_day{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Date{
+    font-size: 14px;
+}

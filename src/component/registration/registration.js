@@ -46,32 +46,32 @@ const Registration = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await fetch('http://localhost:5000/delivery_api/users/registration', {
+            const response = await fetch('http://localhost:5001/delivery_api/users/registration', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
                 },
                 body: new URLSearchParams({ email, password }),
             });
-
+    
             if (!response.ok) {
                 throw new Error('Login failed');
             }
-
+    
             const responseData = await response.json();
-            console.log(responseData); // Выводим ответ в консоль для отладки
-        
-            if (responseData && responseData.success) {
-              // Успешная регистрация, перенаправляем на страницу Entrance
-              navigate('/'); // Используем navigate для перенаправления
+            console.log(responseData);
+    
+            // Check if the token is present in the response
+            if (responseData && responseData.token) {
+                alert('Регистрация пройдена успешно!'); // Alert for successful registration
+                navigate('/'); // Navigate after successful registration
             } else {
-              // Обработка ошибки регистрации
-              alert('Ошибка: ' + (responseData.message || 'Неизвестная ошибка'));
+                alert('Ошибка: ' + (responseData.message || 'Неизвестная ошибка'));
             }
-          } catch (error) {
+        } catch (error) {
             console.error(error);
             alert('Произошла ошибка. Попробуйте еще раз.');
-          }
+        }
     };
     return (
         <div className="header">
@@ -99,7 +99,7 @@ const Registration = () => {
                                 />
                             </div>
                             <div className="input-checked input-password input-1">
-                                <div>
+                                <div className='input-second'>
                                     <label htmlFor="password-input" className="top-password">
                                         Пароль
                                     </label>
@@ -173,6 +173,7 @@ const Registration = () => {
                     </div>
                     <div>
                         <img
+                            className='logo'
                             src={first}
                             alt="Логотип при входе"
                         />

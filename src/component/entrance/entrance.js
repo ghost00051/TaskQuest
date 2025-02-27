@@ -4,6 +4,10 @@ import сloseEyes from '../../img/CloseEyes.svg'
 import openEyes from '../../img/OpenEyes.svg'
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import '../../css/reg_entr/index.css';
+import '../../css/reg_entr/adaptiv.css'
+// import first_element from '../../img/1-element.svg'
+// import second_element from '../../img/2-element.svg'
 
 
 const Entr = () => {
@@ -47,7 +51,7 @@ const Entr = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/delivery_api/users/login', {
+      const response = await fetch('http://localhost:5001/delivery_api/users/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
@@ -65,7 +69,7 @@ const Entr = () => {
       } else {
         throw new Error('Login failed');
       }
-      
+
     } catch (error) {
       console.error('Login error:', error);
     }
@@ -95,7 +99,7 @@ const Entr = () => {
                 />
               </div>
               <div className="input-checked input-password">
-                <div>
+                <div className='input-second'>
                   <label htmlFor="password-input" className="top-password">
                     Пароль
                   </label>
@@ -141,11 +145,24 @@ const Entr = () => {
           </div>
           <div>
             <img
+              className='logo'
               src={first}
               alt="Логотип при входе"
             />
           </div>
         </div>
+      </div>
+      <div>
+        {/* <img
+          src={first_element}
+          alt="Первый элемент"
+          className='first_element'
+        />
+        <img
+          src={second_element}
+          alt="Первый элемент"
+          className='second_element'
+        /> */}
       </div>
     </div>
   );
